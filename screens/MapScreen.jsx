@@ -6,6 +6,8 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Map from '../components/Map';
 import NavigateCard from '../components/NavigateCard';
 import RideOptionsCard from '../components/RideOptionsCard';
+import NavFavorites from '../components/NavFavorites';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 const MapScreen = () => {
 
@@ -13,7 +15,7 @@ const MapScreen = () => {
   const navigation = useNavigation();
 
   return (
-    <View>
+    <SafeAreaView>
 
       <TouchableOpacity
         onPress={() => navigation.navigate('HomeScreen')}
@@ -46,7 +48,7 @@ const MapScreen = () => {
 
         </Stack.Navigator>
       </View>
-    </View>
+    </SafeAreaView>
   )
 }
 

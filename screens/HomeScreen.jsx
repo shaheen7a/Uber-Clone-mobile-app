@@ -2,6 +2,7 @@ import { SafeAreaView, Image, Text, View } from 'react-native'
 import React from 'react'
 import NavOptions from '../components/NavOptions'
 import { InputAutoSuggest } from 'react-native-autocomplete-search';
+import NavFavorites from '../components/NavFavorites';
 
 const HomeScreen = () => {
   return (
@@ -30,6 +31,7 @@ const HomeScreen = () => {
         />
 
         <NavOptions />
+        <NavFavorites />
       </View>
     </SafeAreaView>
   )
